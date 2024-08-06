@@ -141,9 +141,9 @@ createServer({
     });
     server.create('user', {
       id: '123',
-      email: 'user@vanlife.com',
-      password: 'van123',
-      name: 'Patrick',
+      email: 'duke@gmail.com',
+      password: 'DukeLovesVans',
+      name: 'Duke',
     });
   },
 
