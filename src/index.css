@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff7ed;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background-color: #fff7ed;
+    color: #161616;
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  a.active-link {
+    color: #161616;
+    text-decoration: underline;
+  }
+
+  .header {
+    min-height: 10vh;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .octo-arm {
+    transform-origin: 130px 106px;
+  }
+
+  .footer {
+    min-height: 5vh;
+  }
+
+  .home-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+      url('./assets/images/home-hero.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 85vh;
+  }
+
+  .van-type {
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffead0;
+    color: #4d4d4d;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .van-type:hover {
+    color: #ffead0;
+  }
+
+  .van-type:focus {
+    outline: none;
+  }
+
+  .van-type.selected {
+    color: #ffead0;
+  }
+
+  .van-type.simple:hover,
+  .van-type.simple.selected {
+    background-color: #e17654;
+  }
+
+  .van-type.rugged:hover,
+  .van-type.rugged.selected {
+    background-color: #115e59;
+  }
+
+  .van-type.luxury:hover,
+  .van-type.luxury.selected {
+    background-color: #161616;
+  }
+
+  .van-type.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4d4d4d;
+  }
+
+  i[class*='van-type-'] {
+    padding: 7px 14px;
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
