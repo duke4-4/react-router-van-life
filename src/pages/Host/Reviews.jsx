@@ -1,8 +1,3 @@
-// Imports
-// React imports
-import React from 'react';
-
-// Asset imports
 import { BsStarFill } from 'react-icons/bs';
 
 function Reviews() {
