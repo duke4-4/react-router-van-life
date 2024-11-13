@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className="relative">
       <a
-        href="https://github.com/patricklemmer/react-router-van-life"
+        href="https://vercel.com/duke4-4s-projects/react-router-van-life"
         className="github-corner absolute top-0 right-0"
         aria-label="View source on GitHub"
         target={'_blank'}
